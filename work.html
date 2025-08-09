@@ -16,8 +16,9 @@
             <a href="index.html" class="site-title">JUMPEI KANEKO</a>
             <nav class="main-nav">
                 <a href="index.html" class="nav-link">ABOUT</a>
-                <a href="news.html" class="nav-link">NEWS</a>
+                <a href="vision.html" class="nav-link">VISION</a>
                 <a href="work.html" class="nav-link active">WORK</a>
+                <a href="news.html" class="nav-link">NEWS</a>
                 <a href="contact.html" class="nav-link">CONTACT</a>
             </nav>
             <button id="menu-btn" class="mobile-menu-button">MENU</button>
@@ -30,26 +31,54 @@
     <main class="main-content">
         <section class="fade-in-section">
             <h1 class="page-title">WORK</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                <!-- 作品アイテム。hrefに詳細ページのパスを、imgのsrcに画像のパスを指定 -->
-                <a href="work-detail-1.html" class="work-item group">
-                    <div class="work-image-container">
-                        <img src="https://placehold.co/800x800/000/FFF?text=Work+1" alt="作品タイトル 1">
-                    </div>
-                    <div class="work-caption">
-                        <h3 class="font-semibold">作品タイトル 1</h3>
-                        <p class="text-sm text-gray-400">2025</p>
-                    </div>
-                </a>
-                <a href="#" class="work-item group"> <!-- #をwork-detail-2.htmlなどに変更 -->
-                    <div class="work-image-container">
-                        <img src="https://placehold.co/800x800/111/FFF?text=Work+2" alt="作品タイトル 2">
-                    </div>
-                    <div class="work-caption">
-                        <h3 class="font-semibold">作品タイトル 2</h3>
-                        <p class="text-sm text-gray-400">2025</p>
-                    </div>
-                </a>
+            
+            <!-- Arts Category -->
+            <div class="work-category-section">
+                <h2 class="work-subcategory-title">Arts</h2>
+                <div class="work-grid">
+                    <a href="work-detail-1.html" class="work-item group">
+                        <div class="work-image-container">
+                            <img src="https://placehold.co/800x800/000/FFF?text=Art+1" alt="作品タイトル 1">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="font-semibold">作品タイトル 1</h3>
+                            <p class="text-sm text-gray-400">2025</p>
+                        </div>
+                    </a>
+                    <a href="#" class="work-item group">
+                        <div class="work-image-container">
+                            <img src="https://placehold.co/800x800/111/FFF?text=Art+2" alt="作品タイトル 2">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="font-semibold">作品タイトル 2</h3>
+                            <p class="text-sm text-gray-400">2025</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Research Category -->
+            <div class="work-category-section">
+                <h2 class="work-subcategory-title">Research</h2>
+                <div class="work-grid">
+                    <a href="#" class="work-item group">
+                        <div class="work-image-container">
+                            <img src="https://placehold.co/800x800/222/FFF?text=Research+1" alt="リサーチプロジェクト 1">
+                        </div>
+                        <div class="work-caption">
+                            <h3 class="font-semibold">リサーチプロジェクト 1</h3>
+                            <p class="text-sm text-gray-400">2024</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Products Category -->
+            <div class="work-category-section">
+                <h2 class="work-subcategory-title">Products</h2>
+                <div class="work-grid">
+                    <!-- プロダクトアイテムをここに追加 -->
+                </div>
             </div>
         </section>
     </main>
