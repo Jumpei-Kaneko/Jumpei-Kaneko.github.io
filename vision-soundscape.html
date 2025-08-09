@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタルサウンドスケープ - Vision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header" class="site-header">
+        <div class="container mx-auto px-6 md:px-8 py-5 flex justify-between items-center">
+            <a href="index.html" class="site-title">JUMPEI KANEKO</a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">ABOUT</a>
+                <a href="vision.html" class="nav-link active">VISION</a>
+                <a href="work.html" class="nav-link">WORK</a>
+                <a href="news.html" class="nav-link">NEWS</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </nav>
+            <button id="menu-btn" class="mobile-menu-button">MENU</button>
+        </div>
+    </header>
+    <div id="mobile-menu" class="mobile-menu-panel">
+        <!-- JSでナビゲーションが挿入されます -->
+    </div>
+
+    <main class="main-content">
+        <section class="fade-in-section">
+            <h1 class="page-title-detail">デジタルサウンドスケープ</h1>
+            <div class="detail-content">
+                <p>ここに「デジタルサウンドスケープ」に関する詳細なテキストを記述します。都市や自然の音環境（サウンドスケープ）をフィールドレコーディングし、デジタル技術によって加工・再構成することで、新たな聴覚体験を生み出すプロセスについて説明します。音というメディアを通して、場所の記憶やアイデンティティをどのように探求しているのかを記述します。</p>
+            </div>
+            <div class="text-center mt-16">
+                <a href="vision.html" class="inline-block text-sm text-gray-400 hover:text-white transition-colors">← Back to Vision</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> JUMPEI KANEKO</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
