@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     
     if (menuBtn && mobileMenu) {
-        // メニューの中身を動的に生成
+        // PC用ナビゲーションをコピーしてモバイルメニューを作成
         const mainNav = document.querySelector('.main-nav');
         if (mainNav) {
             mobileMenu.innerHTML = mainNav.innerHTML;
