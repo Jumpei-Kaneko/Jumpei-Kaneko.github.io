@@ -7,8 +7,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* ヘッダーとナビゲーションのフォント */
-.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer, .work-subcategory-title, .page-title-detail {
+/* ヘッダーや英語表記部分のフォント */
+.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer {
     font-family: 'Inter', sans-serif;
 }
 
@@ -153,12 +153,12 @@ body {
 }
 
 /* カテゴリ選択ページ (Vision, Work) */
-.work-category-section { /* Visionでもこのクラスを再利用 */
+.work-category-section {
     margin-bottom: 4rem;
 }
-.work-subcategory-title { /* Visionでもこのクラスを再利用 */
+.work-subcategory-title {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.05em;
     padding-bottom: 1rem;
     border-bottom: 1px solid #374151; /* border-gray-700 */
@@ -186,19 +186,18 @@ body {
 }
 .category-title {
     font-size: 1.25rem;
-    font-weight: 600; /* 少し太くして視認性を上げます */
+    font-weight: 600;
 }
 .category-description {
     margin-top: 0.5rem;
     font-size: 0.875rem;
     color: #9CA3AF;
-    font-family: 'Inter', sans-serif; /* 説明文はInterのままにします */
 }
 
 /* 詳細ページ */
 .page-title-detail {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
     border-bottom: 1px solid #374151;
     padding-bottom: 1.5rem;
@@ -255,7 +254,6 @@ body {
 .work-caption p {
     font-family: 'Inter', sans-serif;
 }
-
 
 /* Newsページ */
 .news-item {
