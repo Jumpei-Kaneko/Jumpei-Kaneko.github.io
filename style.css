@@ -8,7 +8,7 @@ body {
 }
 
 /* ヘッダーとナビゲーションのフォント */
-.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer, .work-subcategory-title, .category-title, .page-title-detail {
+.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer, .work-subcategory-title, .page-title-detail {
     font-family: 'Inter', sans-serif;
 }
 
@@ -186,12 +186,13 @@ body {
 }
 .category-title {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600; /* 少し太くして視認性を上げます */
 }
 .category-description {
     margin-top: 0.5rem;
     font-size: 0.875rem;
     color: #9CA3AF;
+    font-family: 'Inter', sans-serif; /* 説明文はInterのままにします */
 }
 
 /* 詳細ページ */
@@ -213,6 +214,7 @@ body {
     font-size: 0.875rem;
     color: #9CA3AF;
     transition: color 0.3s ease;
+    font-family: 'Inter', sans-serif;
 }
 .back-link:hover {
     color: #FFFFFF;
@@ -247,6 +249,13 @@ body {
 .work-caption {
     margin-top: 0.75rem;
 }
+.work-caption h3 {
+    font-family: 'Noto Serif JP', serif;
+}
+.work-caption p {
+    font-family: 'Inter', sans-serif;
+}
+
 
 /* Newsページ */
 .news-item {
@@ -263,6 +272,7 @@ body {
 .news-date {
     color: #6B7280;
     font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
 }
 .news-text {
     font-size: 0.875rem;
