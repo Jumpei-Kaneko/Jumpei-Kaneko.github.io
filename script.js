@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     
     if (menuBtn && mobileMenu) {
-        // PC用ナビゲーションをコピーしてモバイルメニューを作成
+        // メニューの中身を動的に生成
         const mainNav = document.querySelector('.main-nav');
         if (mainNav) {
             mobileMenu.innerHTML = mainNav.innerHTML;
@@ -61,4 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
     }
+
+    // --- Visionページ: Concept Map アコーディオン機能 ---
+    const conceptMapToggle = document.getElementById('concept-map-toggle');
+    const conceptMapContainer = document.getElementById('concept-map-container');
+
+    if (conceptMapToggle && conceptMapContainer) {
+        conceptMapToggle.addEventListener('click', () => {
+            conceptMapContainer.classList.toggle('is-open');
+        });
+    }
 });
+```eof
