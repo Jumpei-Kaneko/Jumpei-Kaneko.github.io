@@ -266,8 +266,16 @@ body {
     transform: scaleX(1);
 }
 
-
-/* Vision ページのまとめ画像 */
+/* Vision ページの Concept Map アコーディオン */
+.concept-map-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+}
+.concept-map-wrapper.is-open {
+    max-height: 1000px; /* 十分な高さを確保 */
+    padding-top: 2.5rem; /* 上にスペースを追加 */
+}
 .vision-summary-image {
     width: 100%;
     height: auto;
@@ -371,4 +379,4 @@ body {
     font-size: 0.75rem;
     color: #4B5563;
 }
-```eof
+```
