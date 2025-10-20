@@ -8,9 +8,10 @@ body {
 }
 
 /* ヘッダーや英語表記部分のフォント */
-.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer {
+.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer, .work-subcategory-title, .page-title-detail, .category-title {
     font-family: 'Inter', sans-serif;
 }
+
 
 /* ヘッダー */
 .site-header {
@@ -107,7 +108,7 @@ body {
     transform: translateY(0);
 }
 
-/* 各ページのスタイル */
+/* Aboutページ */
 .profile-text {
     font-size: 0.875rem;
     line-height: 1.8;
@@ -121,23 +122,51 @@ body {
 .bio-grid {
     margin-top: 3rem;
     display: grid;
-    gap: 2rem;
-    font-size: 0.875rem;
-    line-height: 1.75;
-    color: #9CA3AF;
+    gap: 2.5rem;
 }
 @media (min-width: 768px) {
     .bio-grid {
         margin-top: 4rem;
-        gap: 3rem;
+        gap: 3.5rem;
     }
 }
 .section-title {
     font-weight: 600;
     color: #E5E7EB;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.1em;
     font-size: 0.75rem;
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.timeline-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    font-size: 0.875rem;
+    line-height: 1.75;
+}
+.timeline-year {
+    font-family: 'Inter', sans-serif;
+    color: #9CA3AF;
+    text-align: left;
+}
+.timeline-desc {
+    color: #D1D5DB;
+}
+@media (max-width: 767px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+    .timeline-year {
+        font-size: 0.8rem;
+        color: #6B7280;
+    }
 }
 
 .page-title {
@@ -152,7 +181,7 @@ body {
     }
 }
 
-/* カテゴリ選択ページ (Vision, Work) */
+/* Work カテゴリ選択ページ */
 .work-category-section {
     margin-bottom: 4rem;
 }
@@ -194,6 +223,49 @@ body {
     color: #9CA3AF;
 }
 
+/* Vision ページ テキストリスト */
+.vision-list {
+    display: flex;
+    flex-direction: column;
+}
+.vision-item {
+    display: block;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #374151; /* border-gray-700 */
+    transition: opacity 0.3s ease;
+}
+.vision-item:hover {
+    opacity: 0.7;
+}
+.vision-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    /* --- ここから追加 --- */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* --- ここまで追加 --- */
+}
+@media (min-width: 768px) {
+    .vision-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* --- ここから追加 --- */
+/* Vision ページの矢印 */
+.vision-arrow {
+    font-family: 'Inter', sans-serif;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.vision-item:hover .vision-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* --- ここまで追加 --- */
+
 /* 詳細ページ */
 .page-title-detail {
     font-size: 1.5rem;
@@ -207,6 +279,13 @@ body {
     font-size: 0.875rem;
     line-height: 1.8;
     color: #D1D5DB;
+}
+.detail-subtitle {
+    font-weight: 600;
+    color: #E5E7EB;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 .back-link {
     display: inline-block;
@@ -283,3 +362,4 @@ body {
     font-size: 0.75rem;
     color: #4B5563;
 }
+```
