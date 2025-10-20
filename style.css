@@ -8,7 +8,7 @@ body {
 }
 
 /* ヘッダーや英語表記部分のフォント */
-.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer, .work-subcategory-title, .page-title-detail, .category-title {
+.site-title, .main-nav, .mobile-menu-button, .mobile-menu-panel, .section-title, .page-title, .site-footer, .work-subcategory-title, .category-title {
     font-family: 'Inter', sans-serif;
 }
 
@@ -371,4 +371,4 @@ body {
     font-size: 0.75rem;
     color: #4B5563;
 }
-```
+```eof
