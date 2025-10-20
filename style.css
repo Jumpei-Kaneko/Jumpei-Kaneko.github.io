@@ -232,39 +232,48 @@ body {
     display: block;
     padding: 1.5rem 0;
     border-bottom: 1px solid #374151; /* border-gray-700 */
-    transition: opacity 0.3s ease;
+    transition: color 0.3s ease;
+    color: #EAEAEA;
 }
 .vision-item:hover {
-    opacity: 0.7;
+    color: #9CA3AF; /* text-gray-400 */
 }
 .vision-title {
     font-size: 1.125rem;
     font-weight: 600;
-    /* --- ここから追加 --- */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* --- ここまで追加 --- */
+    position: relative; /* 下線の基準点 */
+    display: inline-block; /* 下線の幅をテキストに合わせる */
 }
 @media (min-width: 768px) {
     .vision-title {
         font-size: 1.25rem;
     }
 }
+/* ホバー時に下線を表示するアニメーション */
+.vision-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor; /* 文字色と同じ色 */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.vision-item:hover .vision-title::after {
+    transform: scaleX(1);
+}
 
-/* --- ここから追加 --- */
-/* Vision ページの矢印 */
-.vision-arrow {
-    font-family: 'Inter', sans-serif;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+
+/* Vision ページのまとめ画像 */
+.vision-summary-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #374151; /* border-gray-700 */
 }
-.vision-item:hover .vision-arrow {
-    opacity: 1;
-    transform: translateX(0);
-}
-/* --- ここまで追加 --- */
+
 
 /* 詳細ページ */
 .page-title-detail {
